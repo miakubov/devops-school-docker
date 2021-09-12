@@ -30,8 +30,11 @@
 **docker run -d -p 5000:5000 --restart=always --name registry registry:2**
 
   -d, --detach                     Run container in background and print container ID
+  
   -p, --publish list               Publish a container s port(s) to the host
+  
   --restart string                 Restart policy to apply when a container exits (default "no")
+  
   --name string                    Assign a name to the container
 
 * Build docker and tag https://docs.docker.com/engine/reference/commandline/build/
@@ -41,6 +44,7 @@
 **docker build httpd/ -t localhost:5000/httpd_my:2.4**
 
  --file , -f		Name of the Dockerfile (Default is 'PATH/Dockerfile')
+ 
  --tag , -t		Name and optionally a tag in the 'name:tag' format
 
 * Push the image to the local registry running at localhost:5000
